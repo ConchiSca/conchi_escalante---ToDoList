@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    font-size: 10px;
+    padding: 30px;
+}
+
+header, form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;   
+}
+
+form button {
+    background-color: #457ab1;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-style: none;
+    border-radius: 2px;
+}
+
+form button:hover {
+    background-color: lightblue;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-height: 50%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 2px;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn, .check-btn {
+    background-color: #f3f3f3;
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+
+}
+
+.check-btn {
+    color: #457ab1;
+}
+
+.trash-btn {
+    color: coral;
+}
+
+.todo-item {
+    padding: 0.8rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.checked {
+    text-decoration: line-through;
+}
